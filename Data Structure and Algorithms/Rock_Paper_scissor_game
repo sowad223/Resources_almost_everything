@@ -1,0 +1,116 @@
+#Rock Paper Scissor game
+import random
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+k={"1":"rock","2":"paper","3":"scissors"}
+game_images = [rock, paper, scissors]
+computer=str(random.randint(1,3))
+print(f"Welcome to Rock Paper Scissor Game")
+print(f"Game rules:\n1.Rock is deafeated By paper\n2."
+      f"Paper is defeated by scissors\n3.Scissor is defeated by Rock\n4.If bothinputs are same game draw")
+print(f"Enter 1 for Rock\n2.Enter 2 for Paper\n3.Enter 3 for Scissor")
+
+while True:
+  my_input=input(f"Choose one option:\n1.Rock\n2.Paper\n3.Scissor\n")
+  print(f"My Input {k.get(my_input)}")
+  print(f"Computer Input {k.get(computer)}")
+  if my_input==computer:
+    print("Draw")
+  else:
+    if my_input=="1" and computer=="2":
+        print(game_images[0])
+        print("You lose")
+    elif my_input=="2" and computer=="3":
+        print(game_images[1])
+        print("You lose")
+    elif my_input=="3" and computer=="1":
+        print(game_images[2])
+        print("You lose")
+    else:
+        print("You win")
+    a=input("Play again(Y/N): ")
+    if a.upper()=="N":
+        break
+
+"""
+Output:
+Welcome to Rock Paper Scissor Game
+Game rules:
+1.Rock is deafeated By paper
+2.Paper is defeated by scissors
+3.Scissor is defeated by Rock
+4.If bothinputs are same game draw
+Enter 1 for Rock
+2.Enter 2 for Paper
+3.Enter 3 for Scissor
+Choose one option:
+1.Rock
+2.Paper
+3.Scissor
+3
+My Input scissors
+Computer Input rock
+
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+
+You lose
+Play again(Y/N): y
+Choose one option:
+1.Rock
+2.Paper
+3.Scissor
+2
+My Input paper
+Computer Input rock
+You win
+Play again(Y/N): y
+Choose one option:
+1.Rock
+2.Paper
+3.Scissor
+3
+My Input scissors
+Computer Input rock
+
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+
+You lose
+Play again(Y/N): N
+
+Process finished with exit code 0
+"""
