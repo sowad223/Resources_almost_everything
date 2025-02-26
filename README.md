@@ -111,7 +111,7 @@ Your contributions will help make this repository even better! 🏆
 
 🔗 Connect with Me
 
-💼 LinkedIn: Sowad Rahman
+💼 LinkedIn: [Sowad Rahman](https://bd.linkedin.com/in/sowad-rahman-b9b390283)
 
 📧 Email: sowadr17@gmail.com
 
