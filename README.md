@@ -1,4 +1,4 @@
-#🚀 Resources Almost Anything
+**🚀 Resources Almost Anything**
 
 Welcome to the Resources Almost Anything! 🎯 This repository is a one-stop destination for all computer science students, developers, and enthusiasts. Whether you're starting with C programming, diving into machine learning, or mastering web development, we've got everything you need! 🏆
 
